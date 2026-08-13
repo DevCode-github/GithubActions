@@ -1,0 +1,16 @@
+name: "Workflow Variables"
+on: 
+  workflow_dispatch
+env:
+  cloud: google-cloud
+jobs:
+  greeting_job:
+    runs-on: [self-hosted, ubuntu-latest]
+    env: 
+      greetings: greetings
+    steps:
+      - name: "Say Hello"
+        run: echo $greeting $cloud
+  
+
+      
