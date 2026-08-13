@@ -5,7 +5,7 @@ env:
   cloud: google-cloud
 jobs:
   greeting_job:
-    runs-on: [self-hosted, ubuntu-latest]
+    runs-on: ubuntu-latest
     env: 
       greetings: greetings
     steps:
