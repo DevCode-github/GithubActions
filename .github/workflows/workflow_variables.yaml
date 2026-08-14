@@ -1,7 +1,7 @@
 name: "Workflow Variables"
 on: 
   workflow_dispatch:
-  push:
+  # push:
 env:
   cloud: google-cloud
 jobs:
@@ -11,7 +11,7 @@ jobs:
       greetings: greetings
     steps:
       - name: "Say Hello"
-        run: echo $greeting $cloud
+        run: echo $greeting $cloud ${{vars.PROJECT_NAME}}
   
 
       
