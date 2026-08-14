@@ -1,6 +1,7 @@
 name: "Workflow Variables"
 on: 
-  workflow_dispatch
+  workflow_dispatch:
+  push:
 env:
   cloud: google-cloud
 jobs:
